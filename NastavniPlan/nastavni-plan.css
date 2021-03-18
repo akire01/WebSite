@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+#naslov {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 3px solid rgb(194, 194, 22);
+  margin-bottom: 50px;
+  margin-top: 16px;
+}
+
+#content {
+  padding-bottom: 10px;
+  min-height: 55vh;
+  overflow-x: hidden;
+}
+
+.section-zaiskri {
+  margin-top: auto;
+  /*bottom: 0px;*/
+  /*position: fixed;*/
+  background-image: url("../slike/zaiskri-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-zaiskri > h1 {
+  text-shadow: 1px 1px #000000;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-zaiskri > .crveni-tekst {
+  color: rgb(131, 12, 12);
+}
+
+#kolegij {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dio {
+  font-size: 0.6em;
+}
+
+#naziv > h1 {
+  margin-top: 0;
+}
+
+#txtNaziv {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+#naziv,
+#tablica {
+  width: 100%;
+}
+
+#tablica {
+  font-size: medium;
+}
+
+#ukupno {
+  border-top: 2px solid black;
+}
+
+#ukupno > td {
+  color: #b00c03;
+  font-weight: bold;
+}
+
+#ukupno > td:nth-child(1) {
+  color: black;
+}
+
+.obrisi-btn {
+  background-color: #b00c03;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 0px black;
+  border: none;
+}
+
+.obrisi-btn:hover {
+  cursor: pointer;
+}
+
+#naziv-kolegija {
+  font-size: medium;
+  font-weight: bold;
+}
+#tags {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-zaiskri > h1 {
+    font-size: x-large;
+  }
+}
+/* 
+@media screen and (max-width: 1200px) {
+  .section-zaiskri {
+  }
+} */

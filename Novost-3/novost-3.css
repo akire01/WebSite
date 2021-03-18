@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#hero-header {
+  height: 280px;
+  width: 100%;
+  background-image: url("../slike/novost3.jpg");
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#naslov {
+  text-align: center;
+  width: 50%;
+  border-bottom: 3px solid #a8b90bb0;
+  margin: 0px;
+  padding: 0px;
+}
+
+#naslov > h1 {
+  margin-bottom: 10px;
+}
+
+.container > p {
+  width: 70%;
+  line-height: 150%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.section-zaiskri {
+  background-image: url("../slike/zaiskri-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-zaiskri > h1 {
+  text-shadow: 1px 1px #000000;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-zaiskri > .crveni-tekst {
+  color: rgb(131, 12, 12);
+}
+
+@media screen and (max-width: 768px) {
+  .section-zaiskri {
+    bottom: 0;
+  }
+  .section-zaiskri > h1 {
+    font-size: 24px;
+  }
+
+  #naslov > h1 {
+    font-size: x-large;
+  }
+
+  #hero-header {
+    overflow: hidden;
+    background-position: center;
+  }
+}

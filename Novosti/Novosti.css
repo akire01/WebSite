@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+#contain {
+  text-align: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+#contain > h1 {
+  width: 60%;
+  padding-bottom: 5px;
+  padding-top: 70px;
+  border-bottom: 3px solid #a8b90bb0;
+}
+
+.kruznice {
+  margin: 60px;
+  margin-bottom: 40px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.kruznica {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  color: white;
+}
+.kruznice > a {
+  text-decoration: none;
+}
+
+#prva {
+  background-image: url("../slike/Kruznice/novost1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#druga {
+  background-image: url("../slike/Kruznice/novost2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#treca {
+  background-image: url("../slike/Kruznice/novost3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.section-zaiskri {
+  background-image: url("../slike/zaiskri-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-zaiskri > h1 {
+  text-shadow: 1px 1px #000000;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-zaiskri > .crveni-tekst {
+  color: rgb(131, 12, 12);
+}
+
+a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .kruznice {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kruznica {
+    margin-bottom: 16px;
+  }
+  .section-zaiskri > h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .kruznice {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kruznica {
+    margin-bottom: 16px;
+  }
+}

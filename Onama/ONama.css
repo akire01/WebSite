@@ -1,0 +1,257 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero-header {
+  width: 100%;
+  height: 300px;
+  background-image: url("../slike/kampus-iz-zraka-min-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ONama {
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(207, 207, 39);
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  background-color: whitesmoke;
+  font-family: "Dancing Script", cursive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content > p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 60%;
+  line-height: 160%;
+}
+
+#naslovi {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text-title {
+  margin-top: 70px;
+  padding-top: 16px;
+  color: rgb(131, 12, 12);
+  font-weight: bold;
+  text-align: center;
+}
+
+.kartice {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kartica {
+  width: 31.5%;
+  border: 0.5px solid lightgray;
+  border-radius: 4px;
+  padding: 8px;
+  line-height: 160%;
+  margin-bottom: 16px;
+  align-self: stretch;
+}
+
+.kartica > h1 {
+  font-size: large;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.kartica-godina {
+  color: rgb(76, 131, 233);
+}
+
+.slikovna-kartica {
+  width: 21%;
+  align-self: stretch;
+  padding: 8px;
+  margin-top: 24px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.slikovna-kartica > h1 {
+  font-size: small;
+  text-transform: uppercase;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.slikovna-kartica > img {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kako-do-nas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("../slike/kakoDoNas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 36px;
+}
+
+.redak-kako-do-nas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.stupac-kako-do-nas {
+  width: 43%;
+  border: 0.5px solid lightgray;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-self: stretch;
+}
+
+.stupac-kako-do-nas > span {
+  font-weight: bold;
+}
+
+.stupac-kako-do-nas > span > .fas {
+  color: blue;
+}
+
+.stupac-kako-do-nas > p {
+  align-self: center;
+  width: 78%;
+}
+
+#mapa {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  height: 450px;
+  width: 55%;
+  border: 0.5px solid lightgray;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.section-zaiskri {
+  background-image: url("../slike/zaiskri-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-zaiskri > h1 {
+  text-shadow: 1px 1px #000000;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-zaiskri > .crveni-tekst {
+  color: rgb(131, 12, 12);
+}
+
+@media screen and (max-width: 768px) {
+  .kartice {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .kartica {
+    width: 90%;
+  }
+
+  .slikovna-kartica {
+    width: 90%;
+  }
+
+  .redak-kako-do-nas {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .stupac-kako-do-nas {
+    width: 90%;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+  #mapa {
+    height: 400px;
+    width: 90%;
+  }
+  .text-content > p {
+    width: 90%;
+  }
+}

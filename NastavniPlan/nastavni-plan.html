@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SUPIT - projektni zadatak</title>
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!------------------>
+    <!-- Ostali CSS -->
+    <link rel="stylesheet" href="nastavni-plan.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <!---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto&display=swap"
+      rel="stylesheet"
+    />
+  
+    <!-- ------------------------------- -->
+   
+    
+  </head>
+  <body>
+    <!-- ........... -->
+    <nav class="navbar navbar-expand-xl navbar-algebra fixed-top">
+      <span class="ml-5 navbar-brand" href="#">
+        <img
+          src="../slike/Algebra-logo.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </span>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../Početna/Početna.html"
+              ><i class="fas fa-home"></i> Početna</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../O nama/ONama.html"
+              ><i class="fas fa-comments"></i> O nama</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Novosti/Novosti.html"
+              ><i class="fas fa-info-circle"></i> Novosti</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../NastavniPlan/nastavni-plan.html"
+              ><i class="fas fa-info-circle"></i> Nastavni plan</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#kontakt-modal" href=""><i class="fas fa-envelope"></i> Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ............ -->
+    <div id="content" class="container">
+      
+      <div id="naslov" >
+        <h1>Nastavni plan</h1>
+      </div>
+
+      <div class="row">
+      <div id="kolegij" class="ui-widget col-sm-12 col-md-12 col-lg-6">
+        <div id="naziv" class="dio animated slideInRight">
+          <label for="tags" id="naziv-kolegija">Naziv kolegija: </label>
+          <br />
+          <div class="input-group">
+            <input
+              class="form-control p-3"
+              id="tags"
+              type="text"
+              placeholder="Započnite unos naziva kolegija..."
+              autofocus
+            />
+          </div>
+        </div>
+      </div>
+
+        <table
+          id="tablica"
+          cellpadding="5"
+          cellspacing="20"
+          rules="rows"
+          cellspacing="0"
+          class="dio table table-striped col-sm-12 col-md-12 col-lg-6 table-responsive"
+        >
+          <thead>
+            <tr>
+              <th>Kolegij</th>
+              <th>ECTS</th>
+              <th>Sati</th>
+              <th>P</th>
+              <th>V</th>
+              <th>Tip</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="body"></tbody>
+          <tfoot>
+            <tr id="ukupno">
+              <td>Ukupno:</td>
+              <td id="ects">0</td>
+              <td id="sati" colspan="6">0</td>
+            </tr>
+          </tfoot>
+        </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <div id="#footer" class="section-zaiskri">
+      <h1>BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+      <h1 class="crveni-tekst">ZAISKRI</h1>
+    </div>
+
+    <!-- Modal -->
+    
+    <div class="modal fade" id="kontakt-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fas fa-envelope" style="color: rgb(0, 255, 255);"></i>
+              Kontaktirajte nas
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+              <div class="form-group">
+                <label for="name">Puno ime:</label>
+                <input type="text" name="name" class="form-control" id="name" autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" />
+              </div>
+              <div class="form-group">
+                <label for="importance">Važnost poruke:</label>
+                <br />
+                <select id="importance" name="importance">
+                  <option value="visoka">Visoka</option>
+                  <option value="niska">Niska</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Vaša poruka:</label>
+                <br />
+                <textarea id="message" name="message" class="form-control" required> </textarea>
+              </div>
+              <div>
+                <label for="newsletter">
+                  Primaj newsletter:
+                  <input type="checkbox" name="newsletter" required />
+                </label>
+              </div>
+    
+              <button type="submit" class="btn btn-primary">Pošalji</button>
+              <button class="btn btn-danger" data-dismiss="modal">
+                Odustani
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- JS SCRIPT -->
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="nastavni-plan.js"></script>
+    <!-- BOOTSRTAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

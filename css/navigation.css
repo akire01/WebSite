@@ -1,0 +1,44 @@
+body {
+  padding-top: 76px;
+}
+
+.navbar-algebra {
+  background-color: black;
+}
+
+.navbar-algebra .navbar-toggler-icon {
+  border-color: white;
+}
+
+.nav-item {
+  margin-left: 16px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link > i.fas {
+  color: rgba(255, 166, 0, 0.932);
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+.secondary-links > .nav-item > .nav-link {
+  color: rgba(255, 166, 0, 0.932);
+}
+
+.secondary-links > .nav-item > .nav-link:hover {
+  color: yellow;
+}
+
+.navbar-toggler-icon > .fa-bars {
+  color: white;
+  font-size: 28px;
+}
+
+.modal-backdrop {
+  opacity: 0 !important;
+}

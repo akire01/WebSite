@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+#pocetniVideo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  font-size: 40px;
+  text-shadow: 1.5px 1.5px black;
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  height: calc(100vh - 70px);
+}
+p {
+  margin: auto;
+}
+.red {
+  font-weight: bold;
+  color: red;
+}
+
+@media screen and (max-width: 1200px) {
+  .teletype-text {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teletype-text {
+    font-size: 1em;
+  }
+}
